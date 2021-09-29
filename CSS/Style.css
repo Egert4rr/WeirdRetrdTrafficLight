@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: #490139;
+    overflow: hidden;
+}
+
+
+.container{
+    border: 2px solid wheat;
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 50%;
+    padding: 1rem;
+
+}
+
+.circle1 {
+    display: block;
+    background: rgb(255, 0, 0);
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    animation-name: circle1;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes circle1 {
+    0% {top: -500px;}
+    100% {top: 0px;}
+}
+
+.circle2 {
+    display: block;
+    background: rgb(255, 230, 0);
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    animation-name: circle2;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes circle2 {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.circle3 {
+    display: block;
+    background: rgb(9, 255, 0);
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    animation-name: circle3;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes circle3 {
+    0% {transform: rotateY(360deg);}
+    100%{transform: rotateY(0deg);}
+}
